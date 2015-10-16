@@ -1,21 +1,33 @@
 html {
   box-sizing: border-box;
     background: #FEFFD6;
+    width: 100%;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
 /* green: #259906
-blue: #312ECC
+
 light blue: #A982FF
 light green: #90CC8A
 brown: #824528 */
 
 h1 {
-  font-family: 'Satisfy', cursive;
+  font-family: 'Lobster Two', cursive;
+  color: #824528;
+}
+
+h2 {
+  font-family: 'Lobster Two', cursive;
 }
 
 p {
   font-family: 'Shadows Into Light Two', cursive;
+  font-size: 16pt;
+}
+
+#welcome {
+  background-color: ;
+  width: 100%;
 }
