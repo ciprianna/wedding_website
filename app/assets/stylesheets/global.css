@@ -7,9 +7,16 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  width: 100%;
+  margin: 0;
+}
+
 /* green: #259906
 
-light blue: #A982FF
+light blue: #F0F8FF
+gainsboro: #DCDCDC
+lavender: #E6E6FA
 light green: #90CC8A
 brown: #824528 */
 
@@ -27,7 +34,18 @@ p {
   font-size: 16pt;
 }
 
-#welcome {
-  background-color: ;
+.blue {
+  background-color: #578497;
   width: 100%;
+  color: #E6E6FA;
+  text-align: center;
+}
+
+.blue_h3 {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 18pt;
+}
+
+.blue_link {
+  text-decoration: none;
 }
