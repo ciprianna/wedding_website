@@ -22,7 +22,11 @@ brown: #824528 */
 
 h1 {
   font-family: 'Lobster Two', cursive;
-  color: #824528;
+  color: white;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-size: 32pt;
 }
 
 h2 {
@@ -39,6 +43,12 @@ p {
   width: 100%;
   color: #E6E6FA;
   text-align: center;
+  position: relative;
+  margin-top: -4px;
+}
+
+.blue_h2 {
+  margin: 0;
 }
 
 .blue_h3 {
@@ -48,4 +58,8 @@ p {
 
 .blue_link {
   text-decoration: none;
+}
+
+#passageway {
+  width: 100%;
 }
