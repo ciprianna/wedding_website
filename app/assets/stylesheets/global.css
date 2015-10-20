@@ -22,7 +22,7 @@ brown: #824528 */
 
 h1 {
   font-family: 'Lobster Two', cursive;
-  color: white;
+  color: #824528;
   position: absolute;
   text-align: center;
   width: 100%;
@@ -40,7 +40,18 @@ p {
 }
 
 .heading {
-  height: 533px;
+  height: 470px;
+}
+
+.heading_text_background {
+  position: absolute;
+  width: 100%;
+  height: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: antiquewhite;
+  opacity: .6;
+  z-index: 1;
 }
 
 .blue {
@@ -73,4 +84,21 @@ p {
   margin-right: -400px;
   left: 50%;
   right: 50%;
+  opacity: .4;
+}
+
+#vegas {
+  z-index: 1;
+  width: 200px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 170px;
+  right: -50%;
+  left: -50%;
+  vertical-align: middle;
+  border: 5px solid #824528;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px darkgray;
 }
