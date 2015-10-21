@@ -16,6 +16,7 @@ body {
 
 light blue: #F0F8FF
 gainsboro: #DCDCDC
+dark teal: #21393E
 lavender: #E6E6FA
 light green: #90CC8A
 brown: #824528 */
@@ -40,7 +41,7 @@ p {
 }
 
 .heading {
-  height: 470px;
+  height: 468px;
 }
 
 .heading_text_background {
