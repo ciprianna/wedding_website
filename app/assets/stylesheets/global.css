@@ -54,13 +54,30 @@ p {
   z-index: 1;
 }
 
+.between_sections {
+  height: 2px;
+}
+
+.dark_gray {
+  height: 1px;
+  width: 100%;
+  background-color: darkgray;
+  margin: 0;
+}
+
+.light_gray {
+  height: 1px;
+  width: 100%;
+  background-color: lightgray;
+  margin: 0;
+}
+
 .blue {
   background-color: #578497;
   width: 100%;
   color: #E6E6FA;
   text-align: center;
   position: relative;
-  margin-top: -4px;
   z-index: 2;
 }
 
