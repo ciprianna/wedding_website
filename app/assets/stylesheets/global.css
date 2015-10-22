@@ -119,8 +119,9 @@ p {
 .story {
   background-color: #C1272D;
   color: antiquewhite;
-  padding-bottom: 200px;
+  padding-bottom: 30px;
   position: relative;
+  overflow: hidden;
 }
 
 .story_h2  {
@@ -133,11 +134,19 @@ p {
   top: 70px;
 }
 
-.story_p {
+.story_p1 {
   margin-left: 25px;
   margin-right: 50px;
   position: relative;
-  top: -400px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.story_p2 {
+  margin-left: 25px;
+  margin-right: 50px;
+  position: relative;
+  margin-top: 40px;
 }
 
 #old_map {
@@ -198,8 +207,24 @@ p {
 }
 
 #lines {
+  position: absolute;
+  display: block;
+  top: 350px;
+  left: 245px;
+  height: 450px;
+}
+
+#omaha_map {
+  width: 230px;
+  border-radius: 50%;
+  border: 10px solid lightcoral;
   position: relative;
   display: block;
-  top: -100px;
-  left: 200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#dashed {
+  width: 100%;
+  margin-top: 50px;
 }
