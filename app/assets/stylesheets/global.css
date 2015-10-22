@@ -42,6 +42,8 @@ p {
 
 .heading {
   height: 468px;
+  position: relative;
+  overflow: hidden;
 }
 
 .heading_text_background {
@@ -82,6 +84,11 @@ p {
   z-index: 2;
 }
 
+.lantern_fill {
+  background-image: url("/lanterns.png");
+  height: 103px;
+}
+
 .blue_h2 {
   margin: 0;
 }
@@ -103,6 +110,7 @@ p {
   margin-right: -400px;
   left: 50%;
   right: 50%;
+  overflow: auto;
   opacity: .4;
 }
 
@@ -124,8 +132,8 @@ p {
 #balloons {
   position: absolute;
   z-index: 1;
-  width: 2000px;
-  margin-left: -150px;
+  width: 400px;
   overflow: hidden;
-  margin-top: 20px;
+  margin-top: 80px;
+  margin-left: -50px;
 }
