@@ -133,7 +133,6 @@ p {
   position: absolute;
   z-index: 1;
   width: 400px;
-  overflow: hidden;
   margin-top: 80px;
   margin-left: -50px;
 }
