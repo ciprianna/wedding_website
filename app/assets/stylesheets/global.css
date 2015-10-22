@@ -41,7 +41,7 @@ p {
 }
 
 .heading {
-  height: 468px;
+  height: 600px;
   position: relative;
   overflow: hidden;
 }
@@ -49,7 +49,7 @@ p {
 .heading_text_background {
   position: absolute;
   width: 100%;
-  height: 90px;
+  height: 150px;
   margin-left: auto;
   margin-right: auto;
   background-color: antiquewhite;
@@ -102,8 +102,8 @@ p {
   text-decoration: none;
 }
 
-#passageway {
-  width: 800px;
+#old_map {
+  width: 1030px;
   position: absolute;
   display: block;
   margin-left: -400px;
@@ -121,7 +121,7 @@ p {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  margin-top: 120px;
+  margin-top: 220px;
   right: -50%;
   left: -50%;
   vertical-align: middle;
@@ -132,7 +132,7 @@ p {
 #balloons {
   position: absolute;
   z-index: 1;
-  width: 400px;
-  margin-top: 80px;
+  width: 500px;
+  margin-top: 140px;
   margin-left: -50px;
 }
