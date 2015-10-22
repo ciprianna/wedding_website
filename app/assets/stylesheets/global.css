@@ -42,7 +42,7 @@ p {
 }
 
 .heading {
-  height: 600px;
+  height: 700px;
   position: relative;
   overflow: hidden;
 }
@@ -117,7 +117,7 @@ p {
 }
 
 #old_map {
-  width: 1030px;
+  width: 1200px;
   position: absolute;
   display: block;
   margin-left: -400px;
@@ -135,18 +135,20 @@ p {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  margin-top: 220px;
+  margin-top: 300px;
   right: -50%;
   left: -50%;
   vertical-align: middle;
-  border: 5px solid #824528;
-  box-shadow: 5px 5px 5px darkgray;
+  border: 1px solid #999;
+  background-color: #fcfcfc;
+  padding: 5px;
+  box-shadow: 10px 10px 20px #824528;
 }
 
 #balloons {
   position: absolute;
   z-index: 1;
   width: 500px;
-  margin-top: 140px;
+  margin-top: 160px;
   margin-left: -50px;
 }
