@@ -116,6 +116,30 @@ p {
   color: #578497;
 }
 
+.story {
+  background-color: #C1272D;
+  color: antiquewhite;
+  padding-bottom: 200px;
+  position: relative;
+}
+
+.story_h2  {
+  margin: 0;
+  padding-top: 40px;
+  text-align: center;
+  font-size: 28pt;
+  text-shadow: 2px 2px black;
+  position: relative;
+  top: 70px;
+}
+
+.story_p {
+  margin-left: 25px;
+  margin-right: 25px;
+  position: relative;
+  top: 150px;
+}
+
 #old_map {
   width: 1200px;
   position: absolute;
@@ -151,4 +175,16 @@ p {
   width: 500px;
   margin-top: 160px;
   margin-left: -50px;
+}
+
+#wood {
+  width: 250px;
+  display: block;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  left: -50%;
+  right: -50%;
+  box-shadow: 5px 5px 15px 5px black;
 }
