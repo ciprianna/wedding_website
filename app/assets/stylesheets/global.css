@@ -188,3 +188,11 @@ p {
   right: -50%;
   box-shadow: 5px 5px 15px 5px black;
 }
+
+#dc_map {
+  width: 220px;
+  margin-top: 200px;
+  margin-left: 20px;
+  border-radius: 50%;
+  border: 10px solid darkslategray;
+}
