@@ -17,6 +17,7 @@ body {
 light blue: #F0F8FF
 gainsboro: #DCDCDC
 dark teal: #21393E
+light bluish teal: #578497
 lavender: #E6E6FA
 light green: #90CC8A
 brown: #824528 */
@@ -76,30 +77,43 @@ p {
 }
 
 .blue {
-  background-color: #578497;
+  background-color: #21393E;
   width: 100%;
   color: #E6E6FA;
   text-align: center;
   position: relative;
   z-index: 2;
+  padding-bottom: 45px;
 }
 
 .lantern_fill {
-  background-image: url("/lanterns.png");
+  background-image: url("/finished_lanterns.png");
   height: 103px;
 }
 
 .blue_h2 {
   margin: 0;
+  margin-top: 45px;
+  font-size: 28pt;
 }
 
 .blue_h3 {
   font-family: 'Shadows Into Light Two', cursive;
   font-size: 18pt;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.blue_h3_thanks {
+  font-family: 'Lobster Two', cursive;
+  font-size: 18pt;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .blue_link {
   text-decoration: none;
+  color: #578497;
 }
 
 #old_map {
