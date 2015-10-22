@@ -135,9 +135,9 @@ p {
 
 .story_p {
   margin-left: 25px;
-  margin-right: 25px;
+  margin-right: 50px;
   position: relative;
-  top: 150px;
+  top: -400px;
 }
 
 #old_map {
@@ -195,4 +195,11 @@ p {
   margin-left: 20px;
   border-radius: 50%;
   border: 10px solid darkslategray;
+}
+
+#lines {
+  position: relative;
+  display: block;
+  top: -100px;
+  left: 200px;
 }
