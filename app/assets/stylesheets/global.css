@@ -285,3 +285,13 @@ p {
   margin-left: -650px;
   margin-right: -650px;
 }
+
+#banner {
+  position: absolute;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  left: -50%;
+  right: -50%;
+}
