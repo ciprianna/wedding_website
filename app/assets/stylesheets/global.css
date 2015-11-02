@@ -16,7 +16,12 @@ body {
 
 light blue: #F0F8FF
 gainsboro: #DCDCDC
-dark teal: #21393E
+Primary color --- light blue: #008EA5
+-- On color scheme:
+--Secondary color -- deep ocean blue: #21393E
+--light purple: #4D426D
+--light green: #23CD9C
+--tan: #E5E4D3
 light bluish teal: #578497
 lavender: #E6E6FA
 light green: #90CC8A
@@ -157,11 +162,11 @@ p {
 }
 
 .proposal {
-  background-color: #3660AC;
+  background-color: #4D426D;
   position: relative;
   color: #E6E6FA;
   padding-bottom: 60px;
-  height: 900px;
+  height: 1000px;
   overflow: hidden;
 }
 
@@ -175,26 +180,16 @@ p {
   display: block;
   left: -50%;
   right: -50%;
-  top: 50px;
-}
-
-.proposal_text {
-  height: 450px;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  width: 300px;
-  margin-top: 140px;
-  right: -50%;
-  left: -50%;
-  border-radius: 15px;
+  top: 80px;
 }
 
 .proposal_p {
   position: absolute;
+  margin-top: 520px;
   margin-left: 30px;
   font-size: 16pt;
-  color: black;
+  margin-right: 30px;
+  text-align: center;
 }
 
 #old_map {
@@ -275,33 +270,27 @@ p {
 }
 
 #hofa {
-  width: 1100px;
+  width: 300px;
   display: block;
   position: absolute;
   left: 50%;
   right: 50%;
-  margin-top: 100px;
-  margin-left: -650px;
-  margin-right: -650px;
+  margin-top: 230px;
+  margin-left: -150px;
+  margin-right: -150px;
+  border: 1px solid #999;
+  background-color: #fcfcfc;
+  padding: 5px;
+  box-shadow: 10px 10px 20px black;
 }
 
 #banner {
   position: absolute;
   width: 400px;
-  margin-top: 45px;
+  margin-top: 75px;
   margin-left: auto;
   margin-right: auto;
   display: block;
   left: -50%;
   right: -50%;
-}
-
-#scroll_background {
-  position: absolute;
-  margin-top: 140px;
-  margin-left: auto;
-  margin-right: auto;
-  left: -50%;
-  right: -50%;
-  width: 400px;
 }
