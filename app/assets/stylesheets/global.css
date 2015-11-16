@@ -192,6 +192,29 @@ p {
   text-align: center;
 }
 
+.accomodations {
+  background: #4BFA76;
+  height: 575px;
+}
+
+.accomodations_h2 {
+  margin-top: 0px;
+  text-align: center;
+  padding-top: 70px;
+  font-size: 24pt;
+}
+
+.accomodations_p {
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.flag_banner {
+  height: 78px;
+  background-image: url('/flag_banner.png');
+}
+
 #old_map {
   width: 1200px;
   position: absolute;
