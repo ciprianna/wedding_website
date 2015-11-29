@@ -193,20 +193,21 @@ p {
 }
 
 .accomodations {
-  background: #4BFA76;
-  height: 575px;
+  background: #27A33D;
+  height: 725px;
 }
 
 .accomodations_h2 {
   margin-top: 0px;
   text-align: center;
-  padding-top: 70px;
+  padding-top: 20px;
   font-size: 24pt;
 }
 
 .accomodations_p {
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 270px;
   text-align: center;
 }
 
@@ -329,4 +330,19 @@ p {
   width: 100%;
   margin-top: 40px;
   transform: scaleY(-1);
+}
+
+#compass {
+  width: 300px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  margin-top: 90px;
+  margin-left: -150px;
+  margin-right: -150px;
+  border: 1px solid #999;
+  background-color: #fcfcfc;
+  padding: 5px;
+  box-shadow: 10px 10px 20px black;
 }
