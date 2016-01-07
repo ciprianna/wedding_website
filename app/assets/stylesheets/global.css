@@ -222,10 +222,11 @@ ul {
 }
 
 .registry {
-  height: 700px;
+  height: 828px;
   position: relative;
   overflow: hidden;
   text-align: center;
+  background: white;
 }
 
 .registry_h2 {
@@ -236,15 +237,16 @@ ul {
 
 .grass {
   background-image: url('/grass.png');
-  height: 125px;
+  height: 120px;
 }
 
 .bottom {
-  background-color: #055A3D;
+  background-color: white;
   text-align: center;
 }
 
 .bottom-p {
+  padding-top: 300px;
   margin: 0;
 }
 
@@ -400,4 +402,34 @@ ul {
   width: 50%;
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+#semper {
+  display: block;
+  width: 33%;
+  float: left;
+}
+
+#wwf {
+  display: block;
+  float: left;
+  width: 33%;
+}
+
+#rubicon {
+  display: block;
+  float: left;
+  width: 33%;
+}
+
+#petsmart {
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+#stjude {
+  display: block;
+  float: left;
+  width: 50%;
 }
