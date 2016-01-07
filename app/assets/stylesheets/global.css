@@ -46,6 +46,11 @@ p {
   font-size: 16pt;
 }
 
+ul {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 16pt;
+}
+
 .heading {
   height: 700px;
   position: relative;
@@ -216,6 +221,38 @@ p {
   background-image: url('/flag_banner.png');
 }
 
+.registry {
+  height: 700px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.registry_h2 {
+  text-align: center;
+  font-size: 24pt;
+  margin-bottom: 0;
+}
+
+.grass {
+  background-image: url('/grass.png');
+  height: 125px;
+}
+
+.bottom {
+  background-color: #055A3D;
+  text-align: center;
+}
+
+.bottom-p {
+  margin: 0;
+}
+
+.footnote {
+  font-size: 12pt;
+  margin: 0;
+}
+
 #old_map {
   width: 1200px;
   position: absolute;
@@ -345,4 +382,22 @@ p {
   background-color: #fcfcfc;
   padding: 5px;
   box-shadow: 10px 10px 20px black;
+}
+
+#arrow {
+  width: 200px;
+}
+
+#target {
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+#bed_bath {
+  display: block;
+  float: left;
+  width: 50%;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
