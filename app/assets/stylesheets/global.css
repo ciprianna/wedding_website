@@ -242,6 +242,22 @@ ul {
   text-align: center;
 }
 
+.menu_icon {
+  background: linear-gradient( to bottom, #4A0112, #4A0112 20%, transparent 20%, transparent 40%, #4A0112 40%, #4A0112 60%, transparent 60%, transparent 80%, #4A0112 80%, #4A0112 100% );
+  height: 25px;
+  float: left;
+  width: 30px;
+  margin: 8px;
+}
+
+#menu_link {
+  cursor: pointer;
+  height: 25px;
+  width: 30px;
+  position: absolute;
+  top: 10px;
+}
+
 #tree {
   width: 100%;
   margin-left: auto;
