@@ -52,6 +52,25 @@ ul {
   font-size: 16pt;
 }
 
+nav button {
+  width: 100%;
+  background-color: #AD8A37;
+  font-size: 16pt;
+  font-family: 'Century Gothic', 'CenturyGothic', 'AppleGothic', sans-serif;
+  font-weight: bold;
+  border: solid #260710;
+  border-radius: 5pt;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background: tan
+}
+
+nav button:active {
+  color: white
+}
+
 .heading {
   position: relative;
   overflow: hidden;
@@ -188,19 +207,19 @@ ul {
   text-align: center;
 }
 
-.accomodations {
+.accommodations {
   background-color: #578497;
   height: 450px;
 }
 
-.accomodations_h2 {
+.accommodations_h2 {
   margin-top: 30px;
   text-align: center;
   padding-top: 20px;
   font-size: 24pt;
 }
 
-.accomodations_p {
+.accommodations_p {
   margin-left: 20px;
   margin-right: 20px;
   text-align: center;
@@ -250,10 +269,28 @@ ul {
   float: left;
   width: 30px;
   margin: 8px;
+  position: absolute;
+  z-index: 3;
+  margin-top: 20px;
+}
+
+.hide_home {
+  visibility: hidden;
+  height: 0;
+}
+
+.show_home {
+  visibility: visible;
+  height: auto;
+}
+
+.navbar_links {
+  width: 100%;
+  background-color: #E5E4D3;
+  font-family: 'Shadows Into Light Two', cursive;
 }
 
 #menu_link {
-  cursor: pointer;
   height: 25px;
   width: 30px;
   position: absolute;
