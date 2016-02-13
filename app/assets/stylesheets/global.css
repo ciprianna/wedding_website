@@ -12,6 +12,10 @@ body {
   margin: 0;
 }
 
+body.has-active-menu {
+  overflow: hidden;
+}
+
 /* green: #259906
     background: #FEFFD6;
 light blue: #F0F8FF
@@ -54,27 +58,31 @@ ul {
 
 nav button {
   width: 100%;
-  background-color: #E5E4D3;
+  background-color: #578497;
   font-size: 16pt;
   font-family: 'Shadows Into Light Two', cursive;
   font-weight: bold;
   border-bottom: solid #260710;
   cursor: pointer;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+  height: 50px;
 }
 
 nav button:hover {
-  background: #578497
+  background: #E5E4D3;
 }
 
 nav button:hover :first-child {
-  background: #578497;
+  background: #E5E4D3;
 }
 
 nav button:active {
   background: white
 }
 
-a {
+nav a {
   color: black;
   text-decoration: none;
 }
@@ -283,19 +291,58 @@ a {
 }
 
 .hide_home {
-  visibility: hidden;
-  height: 0;
+  visibility: visible;
+  height: auto;
+  z-index: 2;
+  position: fixed;
+  transition: transform 0.3s;
+  overflow-y: scroll;
+  transform: translateX(-100%);
 }
 
 .show_home {
   visibility: visible;
   height: auto;
+  z-index: 2;
+  position: fixed;
+  transition: transform 0.3s;
+  overflow-y: scroll;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .navbar_links {
   width: 100%;
-  background-color: #E5E4D3;
+  background-color: #578497;
   font-family: 'Shadows Into Light Two', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+.close_menu {
+  box-shadow: none;
+  border: none;
+}
+
+.c-mask {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  background-color: #000;
+  opacity: 0;
+  transition: opacity 0.3s, width 0s 0.3s, height 0s 0.3s;
+}
+
+.c-mask.is-active {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  transition: opacity 0.3s;
 }
 
 #menu_link {
@@ -429,3 +476,14 @@ a {
   width: 30px;
   float: right;
 }
+
+#home nav button {
+  display: block;
+  text-align: center;
+}
+
+/*@media all and (min-width: 320px) {
+  #home {
+    width: 300px;
+  }
+}*/
