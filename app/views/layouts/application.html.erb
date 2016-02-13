@@ -9,9 +9,20 @@
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 
-  <div class="menu_icon">
-    <a href="#home" id="menu_link"></a>
+  <div id="home" class="hide_home">
+    <nav>
+      <button class="close_menu"><img src="/left_arrow.png" id="left_arrow"></button>
+      <button><a href="#top" class="navbar_links">Home</a></button>
+      <button><a href="#details" class="navbar_links">Details</a></button>
+      <button><a href="#story" class="navbar_links">Our Story</a></button>
+      <button><a href="#proposal" class="navbar_links">The Big Question</a></button>
+      <button><a href="#accommodations" class="navbar_links">Accommodations</a></button>
+      <button><a href="#registry" class="navbar_links">Registries</a></button>
+    </nav>
+    <div style="clear: both">
+    </div>
   </div>
+
 </head>
 <body>
 
