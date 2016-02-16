@@ -14,3 +14,9 @@ function show_menu() {
     cloak.className = "c-mask";
 	}
 };
+
+
+// --Switch links and buttons on nav so entire button is clicked
+// --Activate left arrow to close menu; hide menu icon
+// --Remove menu when link is clicked
+// --Deactivate scrolling when menu is active
