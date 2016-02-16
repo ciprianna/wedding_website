@@ -322,6 +322,7 @@ nav a {
 .close_menu {
   box-shadow: none;
   border: none;
+  height: 30px;
 }
 
 .c-mask {
@@ -345,6 +346,16 @@ nav a {
   z-index: 2
 }
 
+.hide_element {
+  visibility: hidden;
+  height: 0;
+}
+
+.show_element {
+  visibility: visible;
+  height: 25px;
+}
+
 #home {
   z-index: 3;
 }
@@ -353,7 +364,6 @@ nav a {
   height: 25px;
   width: 30px;
   position: absolute;
-  top: 10px;
 }
 
 #tree {
