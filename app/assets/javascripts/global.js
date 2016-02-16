@@ -3,6 +3,10 @@ $(window).bind("load", function() {
   navmenu.addEventListener("click", show_menu);
   closeNav = document.getElementsByClassName("close_menu");
   closeNav[0].addEventListener("click", close_nav);
+  nav_links = document.getElementsByClassName("navbar_links");
+  for (i = 0; i < nav_links.length; i++) {
+    nav_links[i].addEventListener("click", close_nav);
+  }
 });
 
 function show_menu() {
@@ -30,6 +34,5 @@ function close_nav() {
 };
 
 
-// --Activate left arrow to close menu; hide menu icon
 // --Remove menu when link is clicked
 // --Deactivate scrolling when menu is active
