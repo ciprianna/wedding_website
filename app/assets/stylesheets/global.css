@@ -87,6 +87,17 @@ nav a {
   text-decoration: none;
 }
 
+button {
+  font-family: 'Lobster Two', cursive;
+  font-size: 18pt;
+  background: #4D426D;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  width: 100px;
+  height: 40px;
+}
+
 .heading {
   position: relative;
   overflow: hidden;
@@ -98,7 +109,7 @@ nav a {
   height: 65px;
   margin-left: auto;
   margin-right: auto;
-  background-color: antiquewhite;
+  background-color: white;
   opacity: .5;
   z-index: 1;
 }
@@ -353,7 +364,48 @@ nav a {
 
 .show_element {
   visibility: visible;
-  height: 25px;
+}
+
+.fixed_header {
+  position: fixed;
+  z-index: 3;
+}
+
+#rsvp_modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+#rsvp_content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+#close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#close:hover,
+#close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 #home {
