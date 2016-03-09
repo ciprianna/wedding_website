@@ -28,8 +28,41 @@
 
 <div id="rsvp_modal">
   <div id="rsvp_content">
+    <h2 class="blue_h2 left rsvp_header">RSVP</h2>
     <span class="close">x</span>
-    <p>Some text in the Modal..</p>
+    <form action="/rsvp" method="post">
+      <div class="centered">
+        <p>First Name</p>
+        <input type="text" name="first_name">
+      </div>
+      <div class="centered">
+        <p>Last Name</p>
+        <input type="text" name="last_name">
+      </div>
+      <div class="centered">
+        <p>Response to Invitation</p>
+        <select>
+          <option>Gladly Accept</option>
+          <option>Regretfully Decline</option>
+        </select>
+      </div>
+      <div class="centered">
+        <p class="left">Number of Guests</p>
+        <select class="right top_margin">
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+        </select>
+      </div>
+    </form>
   </div>
 </div>
 

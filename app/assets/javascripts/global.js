@@ -86,8 +86,12 @@ window.onclick = function(event) {
   }
 }
 
-// --Fix RSVP button (style and functionality)
-// --Scroll background photos at different speeds
+// --Create Guest Model
+// --Add in form submit post/get routes
+// --Create form validation and javascript ui responses to invalid inputs
+// --Create a "response submitted" notification
 // --Update text to match wedding details
+// --Make website responsive!
 // --HOST!!! -AWS (S3 for front-end only; Heroku)
 // --NameCheap for DNS
+// --Scroll background photos at different speeds
