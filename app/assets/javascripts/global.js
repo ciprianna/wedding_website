@@ -11,6 +11,8 @@ $(window).bind("load", function() {
   rsvp.addEventListener("click", button_click);
   var span = document.getElementsByClassName("close")[0];
   span.addEventListener("click", close_modal);
+  var submit = document.getElementById("submit");
+  submit.addEventListener("click", form_submission);
 });
 
 function show_menu() {
@@ -86,7 +88,11 @@ window.onclick = function(event) {
   }
 }
 
-// --Create Guest Model
+function form_submission () {
+  
+}
+
+
 // --Add in form submit post/get routes
 // --Create form validation and javascript ui responses to invalid inputs
 // --Create a "response submitted" notification

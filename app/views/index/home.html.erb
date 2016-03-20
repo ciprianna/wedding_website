@@ -28,27 +28,28 @@
 
 <div id="rsvp_modal">
   <div id="rsvp_content">
+    <p id="notice"><%= notice %></p>
     <h2 class="blue_h2 left rsvp_header">RSVP</h2>
     <span class="close">x</span>
-    <form action="/rsvp" method="post">
+    <form action="/guests" method="post">
       <div class="centered">
         <p>First Name</p>
-        <input type="text" name="first_name">
+        <input type="text" name="guest[first_name]">
       </div>
       <div class="centered">
         <p>Last Name</p>
-        <input type="text" name="last_name">
+        <input type="text" name="guest[last_name]">
       </div>
       <div class="centered">
         <p>Response to Invitation</p>
-        <select>
+        <select name="guest[attending]">
           <option>Gladly Accept</option>
           <option>Regretfully Decline</option>
         </select>
       </div>
       <div class="centered">
         <p class="left">Number of Guests</p>
-        <select class="right top_margin">
+        <select class="right top_margin" name="guest[total_guests]">
           <option>0</option>
           <option>1</option>
           <option>2</option>
@@ -61,6 +62,9 @@
           <option>9</option>
           <option>10</option>
         </select>
+      </div>
+      <div>
+        <button class="submit" id="submit">Submit</button>
       </div>
     </form>
   </div>
