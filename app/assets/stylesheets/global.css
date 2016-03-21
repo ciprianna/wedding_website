@@ -415,11 +415,31 @@ input {
   text-align: center;
 }
 
-.submit {
+.submit_button {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
   display: inherit;
+  font-family: 'Lobster Two', cursive;
+  font-size: 18pt;
+  background: #4D426D;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.errors {
+  border: solid darkred 2px;
+}
+
+.error_hint {
+  font-size: 12pt;
+  font-style: italic;
+  color: darkred;
+  margin-top: 3px;
 }
 
 #rsvp_modal {
@@ -442,7 +462,7 @@ input {
     padding: 20px;
     border: 5px solid rgba(1,1,1,.5);
     width: 80%;
-    height: 475px;
+    height: auto;
 }
 
 #rsvp_content p {

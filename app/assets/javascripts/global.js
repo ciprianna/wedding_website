@@ -11,7 +11,7 @@ $(window).bind("load", function() {
   rsvp.addEventListener("click", button_click);
   var span = document.getElementsByClassName("close")[0];
   span.addEventListener("click", close_modal);
-  var submit = document.getElementById("submit");
+  var submit = document.getElementById("submit_form");
   submit.addEventListener("click", form_submission);
 });
 
@@ -89,11 +89,64 @@ window.onclick = function(event) {
 }
 
 function form_submission () {
-  
+    event.preventDefault();
+    var first_name = document.getElementsByName("guest[first_name]")[0];
+    var last_name = document.getElementsByName("guest[last_name]")[0];
+    var password = document.getElementsByName("guest[password]")[0];
+    var first_name_error = document.getElementById("first_name_error");
+    var last_name_error = document.getElementById("last_name_error");
+    var password_error = document.getElementById("password_error");
+    if (first_name.value == null || first_name.value == "") {
+        first_name.className = "errors";
+        first_name_error.className = "error_hint show_element";
+        if (last_name.value == null || last_name.value == "") {
+            last_name.className = "errors";
+            last_name_error.className = "error_hint show_element";
+        } else {
+          last_name.className = "";
+          last_name_error.className = "error_hint hide_element";
+        };
+        if (password.value != "Unchained_Melody") {
+          password.className = "right top_margin errors";
+          password_error.className = "error_hint right show_element";
+        } else {
+          password.className = "right top_margin"
+          password_error.className = "error_hint right hide_element";
+        };
+        return false;
+    } else if (last_name.value == null || last_name.value == "") {
+        last_name.className = "errors";
+        last_name_error.className = "error_hint show_element";
+        if (password.value != "Unchained_Melody") {
+          password.className = "right top_margin errors";
+          password_error.className = "error_hint right show_element";
+        } else {
+          password.className = "right top_margin";
+          password_error.className = "error_hint right hide_element";
+        };
+        first_name.className = "";
+        first_name_error.className = "error_hint hide_element";
+        return false;
+    } else if (password.value != "Unchained_Melody") {
+      password.className = "right top_margin errors";
+      password_error.className = "error_hint right show_element";
+      first_name.className = "";
+      first_name_error.className = "error_hint hide_element";
+      last_name.className = "";
+      last_name_error.className = "error_hint hide_element";
+      return false;
+    } else {
+      password.className = "right top_margin";
+      password_error.className = "error_hint right hide_element";
+      first_name.className = "";
+      first_name_error.className = "error_hint hide_element";
+      last_name.className = "";
+      last_name_error.className = "error_hint hide_element";
+      $(this.form).submit();
+    };
 }
 
 
-// --Add in form submit post/get routes
 // --Create form validation and javascript ui responses to invalid inputs
 // --Create a "response submitted" notification
 // --Update text to match wedding details

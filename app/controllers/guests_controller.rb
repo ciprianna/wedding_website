@@ -30,7 +30,7 @@ class GuestsController < ApplicationController
     if @guest.save
       redirect_to home_path, notice: 'Thank you for your response!'
     else
-      render :home, notice: "Oops, looks like we're missing something."
+      redirect_to home_path, notice: "Oops, looks like we're missing something."
     end
   end
 
