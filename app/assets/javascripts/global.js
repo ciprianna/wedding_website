@@ -147,10 +147,8 @@ function form_submission () {
 }
 
 
-// --Create form validation and javascript ui responses to invalid inputs
 // --Create a "response submitted" notification
 // --Update text to match wedding details
 // --Make website responsive!
 // --HOST!!! -AWS (S3 for front-end only; Heroku)
-// --NameCheap for DNS
 // --Scroll background photos at different speeds
