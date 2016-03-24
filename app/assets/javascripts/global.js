@@ -81,9 +81,11 @@ function close_modal () {
 
 window.onclick = function(event) {
   var modal = document.getElementById('rsvp_modal');
+  var thanks = document.getElementById('submission_thanks');
   body = document.getElementsByTagName("body");
-  if (event.target == modal) {
+  if (event.target == modal || event.target == thanks) {
       modal.style.display = "none";
+      thanks.style.display = "none";
       body[0].setAttribute("style", "overflow: auto;");
   }
 }
@@ -107,7 +109,7 @@ function form_submission () {
           last_name.className = "";
           last_name_error.className = "error_hint hide_element";
         };
-        if (password.value != "Unchained_Melody") {
+        if (password.value != "Unchained Melody") {
           password.className = "right top_margin errors";
           password_error.className = "error_hint right show_element";
         } else {
@@ -118,7 +120,7 @@ function form_submission () {
     } else if (last_name.value == null || last_name.value == "") {
         last_name.className = "errors";
         last_name_error.className = "error_hint show_element";
-        if (password.value != "Unchained_Melody") {
+        if (password.value != "Unchained Melody") {
           password.className = "right top_margin errors";
           password_error.className = "error_hint right show_element";
         } else {
@@ -128,7 +130,7 @@ function form_submission () {
         first_name.className = "";
         first_name_error.className = "error_hint hide_element";
         return false;
-    } else if (password.value != "Unchained_Melody") {
+    } else if (password.value != "Unchained Melody") {
       password.className = "right top_margin errors";
       password_error.className = "error_hint right show_element";
       first_name.className = "";
@@ -155,6 +157,7 @@ function form_submission () {
       function(data, status){
           window.close_modal();
           window.open_thanks_modal();
+          $('#form')[0].reset();
           var thanks_close = document.getElementsByClassName("close")[1];
           thanks_close.addEventListener("click", close_thanks_modal);
       });
@@ -162,22 +165,21 @@ function form_submission () {
 }
 
 function open_thanks_modal() {
-  var modal = document.getElementById('submission_thanks');
-  modal.style.display = "block";
+  var thanks = document.getElementById('submission_thanks');
+  thanks.style.display = "block";
   body = document.getElementsByTagName("body");
   body[0].setAttribute("style", "overflow: hidden;");
 }
 
 function close_thanks_modal() {
-  var modal = document.getElementById('submission_thanks');
-  modal.style.display = "none";
+  var thanks = document.getElementById('submission_thanks');
+  thanks.style.display = "none";
   body = document.getElementsByTagName("body");
   body[0].setAttribute("style", "overflow: auto;");
 }
 
-// --Create a "response submitted" notification
-// --Update text to match wedding details
+
 // --Make website responsive!
-// --HOST!!! -AWS (S3 for front-end only; Heroku)
 // --Scroll background photos at different speeds
 // --Countdown of days
+// --Tab avatar a heart <3

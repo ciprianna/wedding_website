@@ -63,6 +63,7 @@ nav button {
   font-family: 'Shadows Into Light Two', cursive;
   font-weight: bold;
   border-bottom: solid #260710;
+  border-radius: 0;
   cursor: pointer;
   box-shadow: none;
   border: none;
@@ -250,7 +251,7 @@ input {
 
 .accommodations {
   background-color: #578497;
-  height: 450px;
+  height: 650px;
 }
 
 .accommodations_h2 {
@@ -264,6 +265,11 @@ input {
   margin-left: 20px;
   margin-right: 20px;
   text-align: center;
+}
+
+.accommodations a {
+  text-decoration: none;
+  color: mintcream;
 }
 
 .registry {
