@@ -96,8 +96,7 @@ function form_submission () {
     var first_name_error = document.getElementById("first_name_error");
     var last_name_error = document.getElementById("last_name_error");
     var password_error = document.getElementById("password_error");
-    var attending = document.getElementsByName("guest[attending]")[0];
-    var total_guests = document.getElementsByName("guest[total_guests]")[0];
+    var queryString = $('#form').serializeArray();
     if (first_name.value == null || first_name.value == "") {
         first_name.className = "errors";
         first_name_error.className = "error_hint show_element";
@@ -147,12 +146,12 @@ function form_submission () {
       // $(this.form).submit();
 
       $.post("api/v1/guests",
-      {
-          first_name: params["first_name"],
-          last_name: params["last_name"],
-          attending: params["attending"],
-          total_guests: params["total_guests"]
-      },
+      {guest:{
+          first_name: queryString[0].value,
+          last_name: queryString[1].value,
+          attending: queryString[2].value,
+          total_guests: queryString[3].value
+      }},
       function(data, status){
           alert("Data: " + data + "\nStatus: " + status);
       });
