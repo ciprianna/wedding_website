@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/kollegorna/active_hash_relation.git
+  revision: cad2dfae86c80b4392d61ab32694be803772bedc
+  specs:
+    active_hash_relation (1.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -20,7 +26,6 @@ GEM
       erubis (~> 2.7.0)
       rails-dom-testing (~> 1.0, >= 1.0.5)
       rails-html-sanitizer (~> 1.0, >= 1.0.1)
-    active_hash_relation (1.1.0)
     active_model_serializers (0.9.4)
       activemodel (>= 3.2)
     activejob (4.2.1)
@@ -144,7 +149,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  active_hash_relation
+  active_hash_relation!
   active_model_serializers
   better_errors
   byebug

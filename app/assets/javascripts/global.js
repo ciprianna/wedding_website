@@ -96,6 +96,8 @@ function form_submission () {
     var first_name_error = document.getElementById("first_name_error");
     var last_name_error = document.getElementById("last_name_error");
     var password_error = document.getElementById("password_error");
+    var attending = document.getElementsByName("guest[attending]")[0];
+    var total_guests = document.getElementsByName("guest[total_guests]")[0];
     if (first_name.value == null || first_name.value == "") {
         first_name.className = "errors";
         first_name_error.className = "error_hint show_element";
@@ -142,7 +144,18 @@ function form_submission () {
       first_name_error.className = "error_hint hide_element";
       last_name.className = "";
       last_name_error.className = "error_hint hide_element";
-      $(this.form).submit();
+      // $(this.form).submit();
+
+      $.post("api/v1/guests",
+      {
+          first_name: params["first_name"],
+          last_name: params["last_name"],
+          attending: params["attending"],
+          total_guests: params["total_guests"]
+      },
+      function(data, status){
+          alert("Data: " + data + "\nStatus: " + status);
+      });
     };
 }
 

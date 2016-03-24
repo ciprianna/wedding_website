@@ -34,7 +34,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'active_model_serializers'
 
-gem 'active_hash_relation'
+gem 'active_hash_relation', github: 'kollegorna/active_hash_relation'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
