@@ -153,11 +153,27 @@ function form_submission () {
           total_guests: queryString[3].value
       }},
       function(data, status){
-          alert("Data: " + data + "\nStatus: " + status);
+          window.close_modal();
+          window.open_thanks_modal();
+          var thanks_close = document.getElementsByClassName("close")[1];
+          thanks_close.addEventListener("click", close_thanks_modal);
       });
     };
 }
 
+function open_thanks_modal() {
+  var modal = document.getElementById('submission_thanks');
+  modal.style.display = "block";
+  body = document.getElementsByTagName("body");
+  body[0].setAttribute("style", "overflow: hidden;");
+}
+
+function close_thanks_modal() {
+  var modal = document.getElementById('submission_thanks');
+  modal.style.display = "none";
+  body = document.getElementsByTagName("body");
+  body[0].setAttribute("style", "overflow: auto;");
+}
 
 // --Create a "response submitted" notification
 // --Update text to match wedding details
