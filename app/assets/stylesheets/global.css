@@ -594,6 +594,11 @@ input {
 
 #arrow {
   width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  position: absolute;
+  left: -50%;
+  right: -50%;
 }
 
 #target {
@@ -655,6 +660,40 @@ input {
   text-align: center;
 }
 
-@media all and (max-width: 400px) {
+@media all and (min-width: 400px) {
 
+}
+
+@media all and (min-width: 600px) {
+
+}
+
+@media all and (min-width: 768px) {
+  .embrace {
+    height: 625px;
+    position: relative;
+    background-image: url('/engage_embrace.jpg');
+    background-size: cover;
+    overflow: hidden;
+  }
+  .embrace:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(10px);
+    -moz-filter: blur(10px);
+    -webkit-filter: blur(10px);
+    -o-filter: blur(10px);
+  }
+  #embrace {
+    height: 800px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    left: -50%;
+    right: -50%;
+    position: absolute;
+  }
 }
