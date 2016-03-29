@@ -180,6 +180,7 @@ function close_thanks_modal() {
 
 
 // --Make website responsive!
+// --Clean-up old/unnecessary code
 // --Scroll background photos at different speeds
 // --Countdown of days
 // --Tab avatar a heart <3
