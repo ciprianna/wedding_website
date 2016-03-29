@@ -49,20 +49,28 @@ function close_nav() {
   header[0].className = "fixed_header heading_text_background show_element";
 };
 
-$(window).scroll(function () {
-  if (window.pageYOffset > 1) {
-    details = document.getElementById("details");
-    ring = document.getElementById("ring");
-    prop_text = document.getElementById("prop_text");
-    story = document.getElementById("story");
-    if ((window.pageYOffset > 555 && window.pageYOffset < 2345) || window.pageYOffset > 3020) {
-      header = document.getElementById("header");
-      header.setAttribute('style', 'opacity: .9');
-    } else {
-      header = document.getElementById("header");
+function isScrolledIntoView(elem)
+{
+    var headingView = $('#header').offset().top;
+    var docViewTop = $(window).scrollTop();
+    var docViewBottom = docViewTop + $(window).height();
+    var elemTop = $(elem).offset().top;
+    var elemBottom = elemTop + $(elem).height();
+    return ((headingView >= (elemTop - $('#header').height())) && (headingView <=  (elemBottom - $('#header').height())))
+}
+
+$(window).scroll(function() {
+    if(isScrolledIntoView($('#top')))
+    {
+      var header = document.getElementById("header");
       header.setAttribute('style', 'opacity: .5');
+    } else if (isScrolledIntoView($('#ring'))) {
+      var header = document.getElementById("header");
+      header.setAttribute('style', 'opacity: .5');
+    } else {
+      var header = document.getElementById("header");
+      header.setAttribute('style', 'opacity: .9');
     }
-  }
 });
 
 function button_click () {
