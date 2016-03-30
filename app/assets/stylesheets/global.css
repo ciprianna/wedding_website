@@ -299,7 +299,6 @@ input {
 }
 
 .embrace {
-  height: 625px;
   position: relative;
 }
 
@@ -647,7 +646,6 @@ input {
 
 #embrace {
   width: 100%;
-  position: absolute;
 }
 
 #left_arrow {
@@ -661,14 +659,10 @@ input {
 }
 
 @media all and (min-width: 400px) {
-
-}
-
-@media all and (min-width: 600px) {
-
-}
-
-@media all and (min-width: 768px) {
+  #tree {
+    margin-bottom: -50px;
+    margin-top: -50px;
+  }
   .embrace {
     height: 625px;
     position: relative;
@@ -695,5 +689,69 @@ input {
     left: -50%;
     right: -50%;
     position: absolute;
+  }
+}
+
+@media all and (min-width: 600px) {
+  #tree {
+    margin-bottom: -100px;
+    margin-top: -100px;
+  }
+}
+
+@media all and (min-width: 768px) {
+  #tree {
+    margin-bottom: -150px;
+    margin-top: -250px;
+  }
+  #ring {
+    width: 100%;
+    margin-top: -50px;
+    margin-bottom: -75px;
+    position: inherit;
+  }
+  #ring_container {
+    height: 550px;
+    overflow: hidden;
+  }
+}
+
+@media all and (min-width: 1020px) {
+  #tree {
+    margin-bottom: -200px;
+    margin-top: -450px;
+  }
+  .embrace {
+    height: 725px;
+  }
+  #embrace {
+    height: 1000px;
+  }
+  #ring {
+    margin-top: 0;
+    margin-bottom: -75px;
+  }
+  #ring_container {
+    height: 650px;
+  }
+}
+
+@media all and (min-width: 1248px) {
+  #tree {
+    margin-bottom: -300px;
+    margin-top: -800px;
+  }
+  .embrace {
+    height: 925px;
+  }
+  #embrace {
+    height: 1100px;
+  }
+  #ring {
+    margin-top: -70px;
+    margin-bottom: -125px;
+  }
+  #ring_container {
+    height: 650px;
   }
 }

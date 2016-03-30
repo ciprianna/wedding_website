@@ -188,6 +188,7 @@ function close_thanks_modal() {
 
 
 // --Make website responsive!
+// --Re-evaluate the nav bar & header on larger screens
 // --Clean-up old/unnecessary code
 // --Scroll background photos at different speeds
 // --Countdown of days
