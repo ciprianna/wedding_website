@@ -549,6 +549,7 @@ input {
 
 #dc_map {
   width: 220px;
+  height: 180px;
   margin-top: 200px;
   margin-left: auto;
   margin-right: auto;
@@ -558,7 +559,8 @@ input {
 }
 
 #omaha_map {
-  width: 230px;
+  width: 220px;
+  height: 180px;
   border-radius: 50%;
   border: 10px solid darkslategray;
   position: relative;
@@ -604,14 +606,15 @@ input {
   display: block;
   float: left;
   width: 50%;
+  margin-top: 30px;
 }
 
 #bed_bath {
   display: block;
   float: left;
   width: 50%;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 #semper {
@@ -697,12 +700,24 @@ input {
     margin-bottom: -100px;
     margin-top: -100px;
   }
+  .proposal {
+    height: 1050px;
+  }
+  .accommodations {
+    height: 550px;
+  }
 }
 
 @media all and (min-width: 768px) {
   #tree {
     margin-bottom: -150px;
     margin-top: -250px;
+  }
+  .blue_h3 {
+    font-size: 20pt;
+  }
+  .blue_h3_thanks {
+    font-size: 20pt;
   }
   #ring {
     width: 100%;
@@ -713,6 +728,49 @@ input {
   #ring_container {
     height: 550px;
     overflow: hidden;
+  }
+  .proposal {
+    height: 900px;
+  }
+  .proposal_h2 {
+    margin-top: 5px;
+  }
+  .proposal_p {
+    margin-left: 75px;
+    margin-right: 75px;
+    font-size: 18pt;
+  }
+  .accommodations {
+    height: 550px;
+  }
+  .accommodations_p {
+    margin-left: 75px;
+    margin-right: 75px;
+    font-size: 18pt;
+  }
+  .registry_p {
+    font-size: 18pt;
+    text-align: center;
+    float: left;
+    width: 100%;
+  }
+  .bottom-p {
+    font-size: 18pt;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .proposal_h2 {
+    margin-top: 30px;
+  }
+  #target img {
+    width: 75px;
+  }
+  #bed_bath {
+    margin-top: 60px;
+  }
+  #bed_bath img {
+    width: 100px;
   }
 }
 
@@ -727,12 +785,46 @@ input {
   #embrace {
     height: 1000px;
   }
+  .float_left {
+    float: left;
+    width: 50%;
+  }
+  #omaha_map {
+    margin-top: 200px;
+  }
+  .story_p1, .story_p2 {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 18pt;
+  }
   #ring {
     margin-top: 0;
     margin-bottom: -75px;
   }
   #ring_container {
     height: 650px;
+  }
+  .proposal {
+    height: 1000px;
+  }
+  .accommodations {
+    height: 450px;
+  }
+  #semper {
+    width: 20%;
+  }
+  #wwf {
+    width: 20%;
+    margin-top: 0;
+  }
+  #rubicon {
+    width: 20%;
+  }
+  #petsmart {
+    width: 20%;
+  }
+  #stjude {
+    width: 20%;
   }
 }
 
@@ -747,11 +839,23 @@ input {
   #embrace {
     height: 1100px;
   }
+  .story_p1, .story_p2 {
+    margin-left: 75px;
+    margin-right: 75px;
+  }
   #ring {
     margin-top: -70px;
     margin-bottom: -125px;
   }
   #ring_container {
     height: 650px;
+  }
+  .proposal_p {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+  .accommodations_p {
+    margin-left: 150px;
+    margin-right: 150px;
   }
 }
