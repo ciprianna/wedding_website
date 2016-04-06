@@ -535,6 +535,30 @@ input {
   vertical-align: middle;
 }
 
+#form p {
+  text-align: center;
+}
+
+#form .centered {
+  width: 100%;
+}
+
+#form input {
+  display: block;
+  margin: auto;
+  width: 150px;
+}
+
+#form select {
+  display: block;
+  margin: auto;
+  width: 150px;
+}
+
+#form .submit_button {
+  margin-top: 20px;
+}
+
 #wood {
   width: 250px;
   display: block;

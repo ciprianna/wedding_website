@@ -118,37 +118,37 @@ function form_submission () {
           last_name_error.className = "error_hint hide_element";
         };
         if (password.value != "Unchained Melody") {
-          password.className = "right top_margin errors";
-          password_error.className = "error_hint right show_element";
+          password.className = "top_margin errors";
+          password_error.className = "error_hint show_element";
         } else {
-          password.className = "right top_margin"
-          password_error.className = "error_hint right hide_element";
+          password.className = "top_margin"
+          password_error.className = "error_hint hide_element";
         };
         return false;
     } else if (last_name.value == null || last_name.value == "") {
         last_name.className = "errors";
         last_name_error.className = "error_hint show_element";
         if (password.value != "Unchained Melody") {
-          password.className = "right top_margin errors";
-          password_error.className = "error_hint right show_element";
+          password.className = "top_margin errors";
+          password_error.className = "error_hint show_element";
         } else {
-          password.className = "right top_margin";
-          password_error.className = "error_hint right hide_element";
+          password.className = "top_margin";
+          password_error.className = "error_hint hide_element";
         };
         first_name.className = "";
         first_name_error.className = "error_hint hide_element";
         return false;
     } else if (password.value != "Unchained Melody") {
-      password.className = "right top_margin errors";
-      password_error.className = "error_hint right show_element";
+      password.className = "top_margin errors";
+      password_error.className = "error_hint show_element";
       first_name.className = "";
       first_name_error.className = "error_hint hide_element";
       last_name.className = "";
       last_name_error.className = "error_hint hide_element";
       return false;
     } else {
-      password.className = "right top_margin";
-      password_error.className = "error_hint right hide_element";
+      password.className = "top_margin";
+      password_error.className = "error_hint hide_element";
       first_name.className = "";
       first_name_error.className = "error_hint hide_element";
       last_name.className = "";
@@ -188,6 +188,9 @@ function close_thanks_modal() {
 
 
 // --Make website responsive!
+// --Continue work on style of rsvp modal/submission confirmation modal
+// ----Center the inputs horizontally
+// --Clear the hint text from rsvp modal on close if clicked away from
 // --Re-evaluate the nav bar & header on larger screens
 // --Clean-up old/unnecessary code
 // --Scroll background photos at different speeds
