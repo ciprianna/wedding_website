@@ -82,7 +82,20 @@ function button_click () {
 
 function close_modal () {
   var modal = document.getElementById('rsvp_modal');
+  var first_name_error = document.getElementById("first_name_error");
+  var last_name_error = document.getElementById("last_name_error");
+  var password_error = document.getElementById("password_error");
+  var first_name = document.getElementsByName("guest[first_name]")[0];
+  var last_name = document.getElementsByName("guest[last_name]")[0];
+  var password = document.getElementsByName("guest[password]")[0];
   modal.style.display = "none";
+  $('#form')[0].reset();
+  password.className = "top_margin";
+  password_error.className = "error_hint hide_element";
+  first_name.className = "";
+  first_name_error.className = "error_hint hide_element";
+  last_name.className = "";
+  last_name_error.className = "error_hint hide_element";
   body = document.getElementsByTagName("body");
   body[0].setAttribute("style", "overflow: auto;");
 }
@@ -90,9 +103,22 @@ function close_modal () {
 window.onclick = function(event) {
   var modal = document.getElementById('rsvp_modal');
   var thanks = document.getElementById('submission_thanks');
+  var first_name_error = document.getElementById("first_name_error");
+  var last_name_error = document.getElementById("last_name_error");
+  var password_error = document.getElementById("password_error");
+  var first_name = document.getElementsByName("guest[first_name]")[0];
+  var last_name = document.getElementsByName("guest[last_name]")[0];
+  var password = document.getElementsByName("guest[password]")[0];
   body = document.getElementsByTagName("body");
   if (event.target == modal || event.target == thanks) {
       modal.style.display = "none";
+      $('#form')[0].reset();
+      password.className = "top_margin";
+      password_error.className = "error_hint hide_element";
+      first_name.className = "";
+      first_name_error.className = "error_hint hide_element";
+      last_name.className = "";
+      last_name_error.className = "error_hint hide_element";
       thanks.style.display = "none";
       body[0].setAttribute("style", "overflow: auto;");
   }
