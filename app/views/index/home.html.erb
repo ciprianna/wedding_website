@@ -32,17 +32,17 @@
     <span class="close">x</span>
     <form action="/guests" method="post" id="form">
       <div class="centered">
-        <p>First Name</p>
+        <p class="label">First Name</p>
         <input type="text" name="guest[first_name]">
         <p class="error_hint hide_element" id="first_name_error">Enter your first name</p>
       </div>
       <div class="centered">
-        <p>Last Name</p>
+        <p class="label">Last Name</p>
         <input type="text" name="guest[last_name]">
         <p class="error_hint hide_element" id="last_name_error">Enter your last name</p>
       </div>
       <div class="centered">
-        <p>Response to Invitation</p>
+        <p class="label">Response to Invitation</p>
         <select name="guest[attending]">
           <option>Gladly Accept</option>
           <option>Regretfully Decline</option>
@@ -50,7 +50,7 @@
         <p></p>
       </div>
       <div class="centered">
-        <p>Number of Guests</p>
+        <p class="label">Number of Guests</p>
         <select class="top_margin" name="guest[total_guests]">
           <option>0</option>
           <option>1</option>
@@ -66,8 +66,8 @@
         </select>
         <p></p>
       </div>
-      <div class="centered">
-        <p>What's our song?</p>
+      <div class="centered" id="password">
+        <p class="label">What's our song?</p>
         <input type="text" name="guest[password]" class="top_margin">
         <p class="error_hint hide_element" id="password_error">Hint - check your invite</p>
       </div>

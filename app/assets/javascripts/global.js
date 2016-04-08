@@ -215,8 +215,6 @@ function close_thanks_modal() {
 
 // --Make website responsive!
 // --Continue work on style of rsvp modal/submission confirmation modal
-// ----Center the inputs horizontally
-// --Clear the hint text from rsvp modal on close if clicked away from
 // --Re-evaluate the nav bar & header on larger screens
 // --Clean-up old/unnecessary code
 // --Scroll background photos at different speeds

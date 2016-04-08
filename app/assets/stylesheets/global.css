@@ -415,11 +415,10 @@ input {
 .centered {
   margin-left: auto;
   margin-right: auto;
-  display: inline-block;
 }
 
 .rsvp_header {
-  width: 90%;
+  width: 95%;
   margin-top: 0;
   text-align: center;
 }
@@ -535,8 +534,17 @@ input {
   vertical-align: middle;
 }
 
+#form {
+  border-radius: 0px;
+}
+
 #form p {
   text-align: center;
+  font-size: 1.5rem;
+}
+
+#form .label {
+  margin-top: 10px;
 }
 
 #form .centered {
@@ -546,13 +554,16 @@ input {
 #form input {
   display: block;
   margin: auto;
-  width: 150px;
+  width: 15rem;
+  height: 40px;
+  font-size: 1.5rem;
 }
 
 #form select {
   display: block;
   margin: auto;
-  width: 150px;
+  width: 15rem;
+  height: 40px;
 }
 
 #form .submit_button {
@@ -784,6 +795,25 @@ input {
 }
 
 @media all and (min-width: 900px) {
+  .rsvp_header {
+    font-size: 3.5rem;
+  }
+  #form p {
+    font-size: 2.5rem;
+  }
+  #form input, #form select {
+    width: 40rem;
+    font-size: 2.5rem;
+    height: 60px;
+  }
+  #form .submit_button {
+    width: 200px;
+    height: auto;
+    font-size: 3rem;
+  }
+  #form #password {
+    margin-bottom: 20px;
+  }
   .proposal_h2 {
     margin-top: 30px;
   }
@@ -802,6 +832,27 @@ input {
   #tree {
     margin-bottom: -200px;
     margin-top: -450px;
+  }
+  #rsvp_content {
+    width: 70%;
+  }
+  #form .centered {
+    float:left;
+    width: 50%;
+  }
+  #form p {
+    font-size: 1.5rem;
+  }
+  #form input, #form select {
+    width: 22rem;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  #form #password {
+    width: 100%;
+  }
+  #form .submit_button {
+    font-size: 2rem;
   }
   .embrace {
     height: 725px;
