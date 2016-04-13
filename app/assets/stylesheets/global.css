@@ -754,6 +754,9 @@ input {
   .blue_h3_thanks {
     font-size: 20pt;
   }
+  .story_p1, .story_p2 {
+    font-size: 22pt !important;
+  }
   #ring {
     width: 100%;
     margin-top: -50px;
@@ -765,32 +768,36 @@ input {
     overflow: hidden;
   }
   .proposal {
-    height: 900px;
+    height: 1000px;
   }
   .proposal_h2 {
     margin-top: 5px;
+    font-size: 32pt;
   }
   .proposal_p {
     margin-left: 75px;
     margin-right: 75px;
-    font-size: 18pt;
+    font-size: 22pt;
   }
   .accommodations {
-    height: 550px;
+    height: 750px;
   }
   .accommodations_p {
     margin-left: 75px;
     margin-right: 75px;
-    font-size: 18pt;
+    font-size: 22pt !important;
+  }
+  .accommodations_h2 {
+    font-size: 32pt !important;
   }
   .registry_p {
-    font-size: 18pt;
+    font-size: 22pt !important;
     text-align: center;
     float: left;
     width: 100%;
   }
   .bottom-p {
-    font-size: 18pt;
+    font-size: 22pt !important;
   }
 }
 
@@ -870,7 +877,6 @@ input {
   .story_p1, .story_p2 {
     margin-left: 50px;
     margin-right: 50px;
-    font-size: 18pt;
   }
   #ring {
     margin-top: 0;
@@ -880,10 +886,10 @@ input {
     height: 650px;
   }
   .proposal {
-    height: 1000px;
+    height: 1100px;
   }
   .accommodations {
-    height: 450px;
+    height: 650px;
   }
   #semper {
     width: 20%;

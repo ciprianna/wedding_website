@@ -214,8 +214,10 @@ function close_thanks_modal() {
 
 
 // --Make website responsive!
+// --Check on viewing database entries on Heroku
 // --Continue work on style of rsvp modal/submission confirmation modal
 // --Re-evaluate the nav bar & header on larger screens
+// --Update lines on nav menu when in mobile
 // --Clean-up old/unnecessary code
 // --Scroll background photos at different speeds
 // --Countdown of days
