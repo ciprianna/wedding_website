@@ -138,6 +138,7 @@ input {
 
 #full_nav {
   visibility: hidden;
+  height: 0;
 }
 
 .between_sections {
@@ -463,7 +464,7 @@ input {
 #rsvp_modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 7; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -849,6 +850,9 @@ input {
   #header {
     display: none;
   }
+  #heading {
+    height: 900px;
+  }
   .full_header {
     visibility: visible;
     color: antiquewhite;
@@ -870,6 +874,10 @@ input {
   }
   #full_nav {
     visibility: visible;
+    width: 100%;
+  }
+  .blue {
+    margin-top: 80px;
   }
   .full_navbar_links {
     float: left;
@@ -884,7 +892,7 @@ input {
   }
   #tree {
     margin-bottom: -200px;
-    margin-top: -450px;
+    margin-top: -550px;
   }
   #rsvp_content {
     width: 70%;
@@ -897,7 +905,7 @@ input {
     font-size: 1.5rem;
   }
   #form input, #form select {
-    width: 22rem;
+    width: 20rem;
     height: 50px;
     font-size: 1.5rem;
   }
@@ -956,9 +964,12 @@ input {
 }
 
 @media all and (min-width: 1248px) {
+  #header {
+    height: 900px;
+  }
   #tree {
-    margin-bottom: -300px;
-    margin-top: -800px;
+    margin-bottom: -450px;
+    margin-top: -825px;
   }
   .embrace {
     height: 925px;
