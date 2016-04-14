@@ -130,6 +130,10 @@ input {
   z-index: 1;
 }
 
+.full_nav {
+  display: none;
+}
+
 .between_sections {
   height: 2px;
 }
@@ -836,6 +840,20 @@ input {
 }
 
 @media all and (min-width: 1020px) {
+  #header {
+    display: none;
+  }
+  .full_nav {
+    display: visible;
+  }
+  .full_navbar_links {
+    float: left;
+    width: 16.667%;
+    height: 65px;
+  }
+  nav button:hover {
+    background-color: #4D426D;
+  }
   #tree {
     margin-bottom: -200px;
     margin-top: -450px;
