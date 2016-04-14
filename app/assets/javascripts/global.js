@@ -71,6 +71,7 @@ $(window).scroll(function() {
       var header = document.getElementById("header");
       header.setAttribute('style', 'opacity: .9');
     }
+    window.stick_header();
 });
 
 function button_click () {
@@ -210,6 +211,15 @@ function close_thanks_modal() {
   thanks.style.display = "none";
   body = document.getElementsByTagName("body");
   body[0].setAttribute("style", "overflow: auto;");
+}
+
+function stick_header() {
+  var full_nav = $("#full_nav");
+  if ($(window).scrollTop() > 895) {
+    full_nav.addClass("stick_nav");
+  } else {
+    full_nav.removeClass("stick_nav");
+  }
 }
 
 
