@@ -881,7 +881,7 @@ input {
   }
   .full_navbar_links {
     float: left;
-    width: 16.667%;
+    width: 16.66%;
     height: 65px;
   }
   nav button:hover {
@@ -995,5 +995,11 @@ input {
   .accommodations_p {
     margin-left: 150px;
     margin-right: 150px;
+  }
+}
+@media all and (min-width: 1650px) {
+  #tree {
+    margin-bottom: -750px;
+    margin-top: -1025px;
   }
 }

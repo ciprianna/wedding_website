@@ -214,8 +214,10 @@ function close_thanks_modal() {
 }
 
 function stick_header() {
-  var full_nav = $("#full_nav");
-  if ($(window).scrollTop() > 895) {
+  var full_nav = $('#full_nav');
+  var window_top = $(window).scrollTop();
+  var div_top = $('#details').offset().top - 80;
+  if (window_top > div_top) {
     full_nav.addClass("stick_nav");
   } else {
     full_nav.removeClass("stick_nav");
@@ -224,7 +226,6 @@ function stick_header() {
 
 
 // --Check on viewing database entries on Heroku
-// --Re-evaluate the nav bar & header on larger screens
 // --Clean-up old/unnecessary code
 // --Scroll background photos at different speeds
 // --Countdown of days
