@@ -228,4 +228,3 @@ function stick_header() {
 // --Check on viewing database entries on Heroku
 // --Clean-up old/unnecessary code
 // --Scroll background photos at different speeds
-// --Countdown of days

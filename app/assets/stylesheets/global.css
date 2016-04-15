@@ -37,7 +37,7 @@ h1 {
   margin-top: 3px;
   text-align: center;
   width: 100%;
-  font-size: 28pt;
+  font-size: 26pt;
   z-index: 1;
   margin-left: 12px;
 }
@@ -241,7 +241,7 @@ input {
   background-color: #578497;
   position: relative;
   padding-bottom: 60px;
-  height: 1180px;
+  height: 1220px;
   overflow: hidden;
 }
 
@@ -262,7 +262,7 @@ input {
 
 .accommodations {
   background-color: #578497;
-  height: 700px;
+  height: 900px;
 }
 
 .accommodations_h2 {
@@ -617,8 +617,8 @@ input {
 
 #ring {
   width: 1000px;
-  left: -50%;
-  right: -50%;
+  left: -60%;
+  right: -40%;
   margin-left: auto;
   margin-right: auto;
   position: absolute;
@@ -708,9 +708,19 @@ input {
 }
 
 @media all and (min-width: 400px) {
+  h1 {
+    font-size: 28pt;
+  }
   #tree {
     margin-bottom: -50px;
     margin-top: -50px;
+  }
+  #ring {
+    left: -50%;
+    right: -50%;
+  }
+  .accommodations {
+    height: 700px;
   }
   .embrace {
     height: 625px;
