@@ -180,7 +180,6 @@ function form_submission () {
       first_name_error.className = "error_hint hide_element";
       last_name.className = "";
       last_name_error.className = "error_hint hide_element";
-      // $(this.form).submit();
 
       $.post("api/v1/guests",
       {guest:{
@@ -227,4 +226,3 @@ function stick_header() {
 
 // --Check on viewing database entries on Heroku
 // --Clean-up old/unnecessary code
-// --Scroll background photos at different speeds
