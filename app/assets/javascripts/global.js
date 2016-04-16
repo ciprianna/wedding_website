@@ -110,8 +110,9 @@ window.onclick = function(event) {
   var first_name = document.getElementsByName("guest[first_name]")[0];
   var last_name = document.getElementsByName("guest[last_name]")[0];
   var password = document.getElementsByName("guest[password]")[0];
+  var c_mask = document.getElementById("c-mask");
   body = document.getElementsByTagName("body");
-  if (event.target == modal || event.target == thanks) {
+  if (event.target == modal || event.target == thanks || event.target == c_mask) {
       modal.style.display = "none";
       $('#form')[0].reset();
       password.className = "top_margin";
@@ -122,6 +123,7 @@ window.onclick = function(event) {
       last_name_error.className = "error_hint hide_element";
       thanks.style.display = "none";
       body[0].setAttribute("style", "overflow: auto;");
+      window.close_nav();
   }
 }
 

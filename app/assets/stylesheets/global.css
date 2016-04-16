@@ -429,7 +429,7 @@ input {
 }
 
 .rsvp_header {
-  width: 95%;
+  width: 90%;
   margin-top: 0;
   text-align: center;
 }
@@ -565,7 +565,7 @@ input {
 #form input {
   display: block;
   margin: auto;
-  width: 15rem;
+  width: 13rem;
   height: 40px;
   font-size: 1.5rem;
 }
@@ -573,7 +573,7 @@ input {
 #form select {
   display: block;
   margin: auto;
-  width: 15rem;
+  width: 13rem;
   height: 40px;
 }
 
@@ -718,6 +718,12 @@ input {
   #ring {
     left: -50%;
     right: -50%;
+  }
+  .rsvp_header {
+    width: 95%;
+  }
+  #form input, #form select {
+    width: 15rem;
   }
   .accommodations {
     height: 700px;
